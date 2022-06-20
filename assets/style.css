@@ -1,0 +1,173 @@
+a {
+	 color: #335cd6;
+	 text-decoration: none;
+}
+ a:hover {
+	 text-decoration: underline;
+}
+ * {
+	 font-size: 16px;
+	 box-sizing: border-box;
+	 font-family: 'Open Sans', sans-serif;
+}
+ body {
+	 background: #fff;
+}
+ .bigicon {
+	 display: inline-block;
+	 width: 40px;
+	 font-size: 40px;
+	 position: relative;
+	 top: 12px;
+}
+ ul {
+	 padding-left: 20px;
+	 margin: 0;
+}
+ #quicksearch {
+	 border: 2px solid #333;
+	 width: calc(100% - 50px);
+	 display: inline-block;
+	 margin: 20px auto;
+	 height: 40px;
+	 height: 40px;
+	 border-radius: 6px;
+	 text-indent: 10px;
+	 margin-top: 0;
+}
+ .container {
+	 width: 1020px;
+	 display: block;
+	 margin: 0 auto;
+	 max-width: 100%;
+}
+ table {
+	 display: table;
+	 width: 100%;
+	 border-collapse: collapse;
+	 width: 100%;
+	/* tr:nth-child(even){
+		background: #f1f1f1;
+	}
+	 tr:nth-child(odd){
+		background: #fff;
+	}
+	 */
+}
+ table caption {
+	 font-size: 18px;
+	 font-weight: bold;
+	 display: block;
+	 margin-bottom: 15px;
+	 width: 100%;
+}
+ table th, table td {
+	 padding: 10px 20px;
+}
+ table th[scope="col"] {
+	 background: #00823b;
+	 color: #fff;
+	 text-align: left;
+	 padding: 20px 20px;
+}
+ table th[scope="row"] {
+	 background: rgba(0, 130, 60, 0.1);
+}
+ table tr {
+	 border-bottom: 1px solid #d7d7d7;
+}
+ table tr:nth-last-child(1) {
+	 border-bottom: 0;
+}
+ th:nth-child(1), td:nth-child(1) {
+	 width: 20%;
+}
+ th:nth-child(2), td:nth-child(2) {
+	 width: 30%;
+}
+ th:nth-child(3), td:nth-child(3) {
+	 width: 30%;
+}
+ th:last-child, td:last-child {
+	 width: 10%;
+}
+ table tr:not(:first-child) td:first-child {
+	 font-weight: bold;
+}
+ .tags {
+	 display: none;
+}
+ td .material-icons {
+	 position: relative;
+	 top: 6px;
+	 margin-right: 5px;
+}
+ @media only screen and (max-width: 768px) {
+	 table tr {
+		 border-bottom: 0px;
+		 margin-bottom: 10px;
+		 display: block;
+	}
+	 td .material-icons {
+		 display: inline-block;
+		 text-align: left;
+	}
+	 tr:not(:first-child) td {
+		 width: 100%;
+		 display: inline-block;
+	}
+	 table tr:first-child th {
+		 display: none;
+	}
+	 table tr:first-child th:first-child {
+		 display: block;
+		 width: 100%;
+	}
+	 main {
+		 padding: 10px;
+	}
+	 table td:empty {
+		 empty-cells: hide;
+		 display: none;
+	}
+	 table tr:not(:first-child) td:nth-child(2):before {
+		 content: 'Includes:';
+		 display: block;
+		 width: 100%;
+		 font-weight: 600;
+		 border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		 padding-bottom: 5px;
+		 margin-bottom: 5px;
+	}
+	 table tr:not(:first-child) td:nth-child(3):before {
+		 content: 'Info:';
+		 display: block;
+		 width: 100%;
+		 font-weight: 600;
+		 border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		 padding-bottom: 5px;
+		 margin-bottom: 5px;
+	}
+	 table tr:not(:first-child) td:last-child:before {
+		 content: 'Cost:';
+		 display: block;
+		 width: 100%;
+		 font-weight: 600;
+		 border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		 padding-bottom: 5px;
+		 margin-bottom: 5px;
+	}
+}
+ tr.accepted {
+	 background: #dfffe8;
+}
+ tr.condaccepted {
+	 background: #fdffe8;
+}
+ tr.hazaccepted {
+	 background: #fff7e8;
+}
+ tr.notaccepted {
+	 background: #ffdfdf;
+}
+ 
