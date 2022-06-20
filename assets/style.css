@@ -171,3 +171,397 @@ a {
 	 background: #ffdfdf;
 }
  
+* {
+	 font-family: 'Open Sans', sans-serif;
+	 box-sizing: border-box;
+}
+ * {
+	 font-size: 16px;
+}
+ .clear {
+	 clear: both;
+	 float: none;
+}
+ .per66 {
+	 width: 66.6666666667%;
+	 float: left;
+}
+ .per66:after {
+	 content: '';
+	 clear: both;
+	 float: none;
+	 display: block;
+}
+ input:-webkit-autofill {
+	 -webkit-box-shadow: 0 0 0 30px white inset;
+}
+ input {
+	 max-width: 100%;
+}
+ p {
+	 line-height: 24px;
+}
+ body, html {
+	 margin: 0;
+	 padding: 0;
+}
+ header {
+	 background: royalblue;
+	 padding: 80px 0px;
+	 margin-bottom: 0px;
+	 padding-top: 40px;
+}
+ header h1 {
+	 margin: 0;
+	 color: #fff;
+	 font-size: 48px;
+	 text-align: center;
+}
+ #anchors a {
+	 display: inline-block;
+	 margin: 10px 0px;
+	 text-decoration: none;
+	 border-color: royalblue;
+	 color: royalblue;
+}
+ #anchors a:hover {
+	 text-decoration: underline;
+	 background: royalblue;
+	 color: #fff;
+}
+ .example {
+	 border: 2px solid lightgray;
+	 padding: 40px;
+	 margin-bottom: 50px;
+	 display: block;
+	 position: relative;
+}
+ .example:before {
+	 content: "EXAMPLE";
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 padding: 5px 10px;
+	 font-weight: 400;
+	 text-transform: none;
+	 font-size: 12px;
+	 line-height: 1.25;
+	 background: #bfc1c3;
+	 color: white;
+}
+ h1 {
+	 font-size: 32px;
+}
+ h2 {
+	 font-size: 28px;
+}
+ .container {
+	 width: 1020px;
+	 margin: 0 auto;
+	 max-width: 100%;
+}
+ .wrappercontainer {
+	 padding: 0px;
+}
+ form {
+	 display: block;
+}
+ input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"], textarea, select {
+	 display: block;
+	 min-width: 300px;
+}
+ form {
+	 position: relative;
+	 bottom: 40px;
+}
+ .form-control {
+	 border: 2px solid #0b0c0c;
+	 border: 2px solid #666;
+	 font-weight: 400;
+	 text-transform: none;
+	 padding: 8px 6px 8px;
+	 width: 50%;
+}
+ label.form-label {
+	 margin-bottom: 5px;
+	 display: block;
+	 font-weight: 600;
+	 font-size: 18px;
+}
+ .form-hint {
+	 color: #6f777b;
+	 line-height: 24px;
+	 margin-bottom: 10px;
+	 display: block;
+}
+/* The switch - the box around the slider */
+ .switch {
+	 position: relative;
+	 display: inline-block;
+	 width: 60px;
+	 height: 34px;
+}
+/* Hide default HTML checkbox */
+ .switch input {
+	 display: none;
+}
+/* The slider */
+ .slider {
+	 position: absolute;
+	 cursor: pointer;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 background-color: #ccc;
+	 -webkit-transition: 0.4s;
+	 transition: 0.4s;
+}
+ .slider:before {
+	 position: absolute;
+	 content: "";
+	 height: 26px;
+	 width: 26px;
+	 left: 4px;
+	 bottom: 4px;
+	 background-color: white;
+	 -webkit-transition: 0.4s;
+	 transition: 0.4s;
+}
+ input:checked + .slider {
+	 background-color: #2196f3;
+}
+ input:focus + .slider {
+	 box-shadow: 0 0 1px #2196f3;
+}
+ input:checked + .slider:before {
+	 -webkit-transform: translateX(26px);
+	 -ms-transform: translateX(26px);
+	 transform: translateX(26px);
+}
+/* Rounded sliders */
+ .slider.round {
+	 border-radius: 34px;
+}
+ .slider.round:before {
+	 border-radius: 50%;
+}
+ input:focus, textarea:focus, select:focus, button:focus, section:focus {
+	 outline: 3px solid #ffbf47;
+	 outline-offset: 0;
+}
+ .form-group {
+	 margin-bottom: 30px;
+}
+ .multiple-choice input {
+	 position: absolute;
+	 cursor: pointer;
+	 left: 0;
+	 top: 0;
+	 width: 20px;
+	 height: 20px;
+	 z-index: 1;
+	 margin: 0;
+	 zoom: 1;
+	 filter: alpha(opacity=0);
+	 opacity: 0;
+}
+ .multiple-choice label {
+	 float: left;
+	 padding-top: 7px;
+	 padding-bottom: 7px;
+	 cursor: pointer;
+	 padding: 3px 10px 9px 12px;
+	 display: block;
+	 -ms-touch-action: manipulation;
+	 touch-action: manipulation;
+}
+ .multiple-choice [type=radio] + label::before {
+	 content: "";
+	 border: 2px solid;
+	 background: transparent;
+	 width: 20px;
+	 height: 20px;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 border-radius: 50%;
+}
+ .multiple-choice [type=radio] + label::after {
+	 content: "";
+	 border: 8px solid;
+	 width: 0;
+	 height: 0;
+	 position: absolute;
+	 top: 4px;
+	 left: 4px;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 border-radius: 50%;
+	 zoom: 1;
+	 filter: alpha(opacity=0);
+	 opacity: 0;
+}
+ .multiple-choice input {
+	 position: absolute;
+	 cursor: pointer;
+	 left: 0;
+	 top: 0;
+	 width: 38px;
+	 height: 38px;
+	 z-index: 1;
+	 margin: 0;
+	 zoom: 1;
+	 filter: alpha(opacity=0);
+	 opacity: 0;
+}
+ .multiple-choice input:checked + label::after {
+	 zoom: 1;
+	 filter: alpha(opacity=100);
+	 opacity: 1;
+}
+ .multiple-choice {
+	 float: left;
+	 display: block;
+	 position: relative;
+	 padding: 0 0 0 20px;
+	 margin-bottom: 10px;
+}
+ fieldset {
+	 border: none;
+	 margin: 0;
+	 padding: 0;
+}
+ .inline .multiple-choice {
+	 margin-bottom: 0;
+	 margin-right: 30px;
+}
+ input:focus, textarea:focus, select:focus, button:focus {
+	 outline: 3px solid #ffbf47;
+	 outline-offset: 0;
+}
+ .select2-container--default.select2-container--focus .select2-selection--multiple {
+	 border: solid black 2px;
+	 outline: 0;
+	 border-radius: 0px;
+	 outline: 3px solid #ffbf47;
+	 outline-offset: 0;
+}
+ .select2-container--default .select2-selection--multiple {
+	 background-color: white;
+	 border: solid black 2px;
+	 border-radius: 0px;
+	 cursor: text;
+	 padding: 3px 6px 3px;
+}
+ .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	 color: #e0e0e0;
+	 cursor: pointer;
+	 display: inline-block;
+	 font-weight: bold;
+	 margin-right: 2px;
+	 background: #a6a6a6;
+	 border-radius: 20px;
+	 width: 20px;
+	 height: 20px;
+	 text-align: center;
+	 font-size: 22px;
+	 position: relative;
+	 top: 1px;
+	 right: auto;
+	 line-height: 21px;
+	 position: absolute;
+	 top: 3px;
+	 left: 4px;
+	 width: 25px;
+	 background: #001c0d;
+	 height: 25px;
+	 text-align: center;
+	 line-height: 25px;
+	 border-radius: 20px;
+	 color: #fff;
+}
+ .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	 background-color: #00823b;
+	 border: 0px;
+	 padding: 5px 10px;
+	 border-radius: 20px;
+	 position: relative;
+	 padding-left: 40px;
+	 height: 30px;
+	 padding-top: 3px;
+	 color: #fff;
+}
+ .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+	 color: #922828;
+	 background: #e46f6f;
+}
+ pre.line-numbers {
+	 padding-left: 2.5rem;
+	 padding-bottom: 0;
+}
+ code, code span {
+	 font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+ section {
+	 padding: 20px;
+	 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	 margin-bottom: 40px;
+	 background: #fff;
+}
+ section:hover {
+	 box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+ section h2 {
+	 margin-top: 0;
+}
+ body {
+	 background: #ededed;
+}
+ #anchors a {
+	 position: relative;
+}
+ #anchors a:hover {
+	 overflow: visible;
+}
+ #anchors a:hover:before {
+	 content: '';
+	 position: absolute;
+	 transform: rotate(90deg) translateX(-50%);
+	 left: 50%;
+	 top: 40px;
+	 color: royalblue;
+	 display: block;
+}
+ .form-group.has-error {
+	 border-left: 5px solid #b10e1e;
+	 padding-left: 20px;
+}
+ .form-group.has-error .form-label {
+	 color: #b10e1e;
+}
+ span.form-error {
+	 display: block;
+	 color: #b10e1e;
+	 margin-top: 10px;
+}
+ input.disabled {
+	 background: gray;
+	 opacity: 0.5;
+}
+ .input-small {
+	 width: 30%;
+}
+ .input-medium {
+	 width: 50%;
+}
+ .input-large {
+	 width: 70%;
+}
+ .has-success input, .has-success select {
+	 border-color: #00823b;
+}
+ 
