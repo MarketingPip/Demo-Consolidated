@@ -1,0 +1,51 @@
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  
+  <title>Demo</title>
+
+<link rel="stylesheet" href="assets/style.css">
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+
+
+<main>
+<div class="container" >
+	<h2>Types of waste we accept at recycling centers</h2>
+	<label for="quicksearch" class="form-label">Lookup waste items</label>
+	<span class="form-hint">
+      Please provide keywords to see information about types of waste we accept including potential costs. The table will automatically update with relevant results.
+      <br><br>
+      For example, "bike" or "cardboard".
+    </span>
+	<i class="material-icons bigicon">
+search
+</i>
+	<input type="text" id="quicksearch"  name="quicksearch" autocomplete="off" placeholder="Quick search waste items"></input>
+	
+	<table>
+		
+		
+	<tbody id="test">	
+    <tr><th scope="col">Item</th><th scope="col">Including</th><th scope="col">Info</th><th scope="col">Cost</th></tr>
+		
+		
+		</tbody>		
+</table>
+<br />
+
+	
+</div>
+
+
+</main>
+
+<script src="assets/fetch-data.js"></script>
+
+
